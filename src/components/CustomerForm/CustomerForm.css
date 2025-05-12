@@ -1,0 +1,37 @@
+/* CustomerForm.css */
+.body {
+    color: white; /* Sets default text color to white */
+}
+
+.body .form-control {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.body .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.body label {
+    color: white !important;
+}
+
+/* Focus styles for better UX */
+.body .form-control:focus {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+/* Remove number input spinner */
+.body input[type=number]::-webkit-outer-spin-button,
+.body input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.body input[type=number] {
+    -moz-appearance: textfield;
+}

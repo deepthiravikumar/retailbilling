@@ -1,0 +1,115 @@
+/* Explore.css */
+.explore-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #1a1a2e;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 80vh; /* Minimum height */
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 80vh;
+}
+
+.second-row {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.customer-form-container {
+    background-color: #0f3460;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    min-height: 120px; /* Minimum height */
+}
+
+.cart-summary-container {
+    background-color: #0f3460;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    flex: 1;
+    min-height: 200px;
+}
+
+.cart-items-container {
+    background-color: #0f3460;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 2;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Improved Cart Items styling */
+.cart-items-list {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.cart-item {
+    background-color: #16213e;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Better spacing for form elements */
+.customer-form-container .form-control {
+    margin-bottom: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .explore-container {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .right-column {
+        margin-top: 20px;
+    }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #16213e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0f3460;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e94560;
+}
